@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica_sky</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container-fluid {
+            background-color: white;
+        }
+        
+       
+        
+        #home {
+            font-size: 25px;
+            color: #bcbcbc;
+        }
+        
+        body {
+            font-family: Microsoft JhengHei;
+            overflow-x: hidden;
+            background-image: url(img/winter.jpg);
+            background-size: cover;
+        }
+        
+        #navheader li a {
+            color: #bcbcbc;
+        }
+        
+        #navheader li a:hover {
+            color: #888888;
+        }
+        
+        #navheader li:hover {
+            border-bottom: 2px solid #888888;
+        }
+        
+        #image img {
+            margin-top: 5%;
+            margin-left: 3%;
+            width:80%;
+        }
+        
+        #text {
+            margin-top: 3%;
+            color: #363636;
+            width: 35%;
+            background-color: rgba(255, 255, 255, 0.39);
+        }
+        
+        @media screen and (max-width: 767px) {
+            #navheader li:hover {
+                background-color: #f1f8ff;
+                border: none;
+            }
+            #text {
+                margin-left: 15%;
+                width: 60%;
+            }
+            #image {
+                margin-left: 20px;
+            }
+             #image img{
+                width: 80%;
+            }
+        }
+        
+        @media screen and (min-width: 768px)and (max-width: 979px) {
+            #navheader li:hover {
+                background-color: #f1f8ff;
+                border: none;
+            }
+            #text {
+                margin-left: 10%;
+                width: 60%;
+            }
+             
+            
+        }
+       
+    </style>
+
+</head>
+
+<body ondragstart="return false" onselectstart="return false" onContextMenu="return false">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" id="home" href="index.html">JessicaSKY <span class="glyphicon glyphicon-grain" aria-hidden="true"></span></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="navheader">
+                            <li><a href="about.html">關於我 About me<span class="sr-only">(current)</span></a></li>
+                            <li><a href="experience.html">經歷 Experience</a></li>
+                            <li><a href="work.html">作品 Works</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="image">
+
+            <img src="img/4.JPG">
+        </div>
+        <div div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="text">
+            <p style=" text-indent:30px">Hello, Everyone I am Jessica</p>
+            <p style=" text-indent:30px">This is a place that you can know about me</p>
+            <p>學歷 : 東吳大學英文系</p>
+            <p>興趣 : 閱讀、打籃球、敲打電腦鍵盤(大概就是所謂的編寫程式吧?)</p>
+            <p style=" text-indent:36px">還有塗鴉(因為畫工有待加強，所以只能說是塗鴉了)</p>
+            <p>專長 : Adobe Photoshop、Adobe Illustrator、CSS、HTML</p>
+            <p>個人小語：</p>
+            <p style=" text-indent:36px">這是一個剛從英文系畢業的新鮮人所創造的小天地</p>
+            <p style=" text-indent:36px">動畫、網頁框架都是自己try出來的結果</p>
+            <p style=" text-indent:36px">或許英文系和程式設計很難聯想在一起</p>
+            <p style=" text-indent:36px">但是誰說一個人只能侷限在一種專長呢=w=</p>
+            <p style=" text-indent:36px">在製作這個網站時，雖然有時會遇到意料之外的錯誤</p>
+            <p style=" text-indent:36px">但是在debug成功時，卻有很大的成就感</p>
+            <p style=" text-indent:36px">我非常enjoy這個過程(雖然是滿累人的就是了==")</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

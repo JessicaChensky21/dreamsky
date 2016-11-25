@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica_sky</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+
+
+            $(".sm").click(function () {
+                var $img = $("#myModal .modal-body .bigimage >img");
+                var $tx = $("#myModal .modal-body  .text");
+                var $head = $("#myModal .modal-header");
+                var $sm1 = $("#sm1 >img");
+                var $sm2 = $("#sm2 >img");
+                var $sm3 = $("#sm3 >img");
+                var $bigimg = $("#myModal .modal-body .bigimage >img");
+                if ($(this).attr("id") == "image1") {
+
+                    $tx.empty();
+                    $head.empty();
+                    var txt1 = $("<p></p>").text("這個網站是我自己初次網站作品");
+                    var txt2 = $("<p></p>").text("製作完成後");
+                    var txt3 = $("<p></p>").text("就會發覺該學習的還有很多");
+                    var txt4 = $("<p></p>").text("我會繼續再接再厲的!");
+                    var txt5 = $("<p></p>").text("我的個人網站");
+                     $img.css("height", "250px");
+                    $img.attr("src", "img/web.jpg");
+                    $sm1.attr("src", "img/sm-2.jpg");
+                    $sm2.attr("src", "img/sm-1.jpg");
+                     $sm3.attr("src", "img/sm13.jpg");
+                    $tx.append(txt1, txt2, txt3, txt4);
+                    $head.append(txt5);
+
+                    $("#myModal").modal();
+                    $(" .smallimage").click(function () {
+                            if ($(this).attr("id") == "sm1") {
+                                $bigimg.attr("src", "img/bg-2.jpg");
+                            } else if ($(this).attr("id") == "sm2") {
+                                $bigimg.attr("src", "img/bg-1.jpg");
+                            } else if ($(this).attr("id") == "sm3") {
+                                $bigimg.attr("src", "img/bg13.jpg");
+                            }
+                    });
+
+                } else if ($(this).attr("id") == "image2") {
+                    $tx.empty();
+                    $head.empty();
+                    var txt1 = $("<p></p>").text("這些是在學校期間上PS課的成果");
+                    var txt2 = $("<p></p>").text("我不但學到PS用法，也學到AI基礎");
+                      var txt3 = $("<p></p>").text("這堂課也學了一點設計基礎");
+                    var txt4 = $("<p></p>").text("也激起我設計的興趣");
+                    var txt6 = $("<p></p>").text("只要改變一點圖片位置");
+                     var txt7 = $("<p></p>").text("文字字型和位置擺放");
+                       var txt8 = $("<p></p>").text("就能創造出不一樣的視覺效果");
+                       var txt9 = $("<p></p>").text("所以希望有天我能設計出");
+                     var txt10 = $("<p></p>").text("能夠吸引大家目光的平面作品!");
+                    var txt5 = $("<p></p>").text("課堂海報設計");
+                     $img.css("height", "400px");
+                    $img.attr("src", "img/c2.jpg");
+                      $sm1.attr("src", "img/c2.jpg");
+                    $sm2.attr("src", "img/bg2.jpg");
+                     $sm3.attr("src", "img/c1.jpg");
+                    $tx.append(txt1, txt2, txt3, txt4, txt6, txt7, txt8, txt9,txt10);
+                    $head.append(txt5);
+                    $("#myModal").modal();
+                        $(" .smallimage").click(function () {
+                            if ($(this).attr("id") == "sm1") {
+                                $bigimg.attr("src", "img/c2.jpg");
+                            } else if ($(this).attr("id") == "sm2") {
+                                $bigimg.attr("src", "img/bg2.jpg");
+                            } else if ($(this).attr("id") == "sm3") {
+                                $bigimg.attr("src", "img/c1.jpg");
+                            }
+                    });
+                } else if ($(this).attr("id") == "image3") {
+                    $tx.empty();
+                    $head.empty();
+                    var txt1 = $("<p></p>").text("這是一個很有趣的團體作業");
+                    var txt2 = $("<p></p>").text("我們完全使用illustrator製作");
+                    var txt4 = $("<p></p>").text("光繪畫就花了一段時間呢");
+                    var txt6 = $("<p></p>").text("這是一個結合小遊戲的電子書");
+                    var txt7 = $("<p></p>").text("希望小孩能邊玩遊戲過程中邊學習");
+                    var txt5 = $("<p></p>").text("電子書");
+                     $img.css("height", "200px");
+                    $img.attr("src", "img/cover3.png");
+                     $sm1.attr("src", "img/cover3.png");
+                    $sm2.attr("src", "img/bg32.jpg");
+                     $sm3.attr("src", "img/bg33.jpg");
+                    $tx.append(txt1, txt2, txt3, txt4, txt6, txt7);
+                    $head.append(txt5);
+                    $("#myModal").modal();
+                    $(" .smallimage").click(function () {
+                            if ($(this).attr("id") == "sm1") {
+                                $bigimg.attr("src", "img/cover3.png");
+                            } else if ($(this).attr("id") == "sm2") {
+                                $bigimg.attr("src", "img/bg32.jpg");
+                            } else if ($(this).attr("id") == "sm3") {
+                                $bigimg.attr("src", "img/bg33.jpg");
+                            }
+                    });
+                } else if ($(this).attr("id") == "image4") {
+                    $tx.empty();
+                    $head.empty();
+                    var txt1 = $("<p></p>").text("這是我第一次玩Unity");
+                    var txt2 = $("<p></p>").text("而這是我們課堂團體作業的成果");
+                    var txt3 = $("<p></p>").text("但因為時間關係所以完成度不高");
+                    var txt4 = $("<p></p>").text("不過我覺得這是一個很棒的經驗");
+                    var txt6 = $("<p></p>").text("能和一個team一起完成一個遊戲");
+                    var txt7 = $("<p></p>").text("真的超開心的!!");
+                    var txt5 = $("<p></p>").text("Unity初次體驗");
+                     $img.css("height", "250px");                  
+                    $img.attr("src", "img/c3.jpg");
+                      $sm1.attr("src", "img/c3.jpg");
+                    $sm2.attr("src", "img/bg42.jpg");
+                     $sm3.attr("src", "img/bg43.jpg");
+                    $tx.append(txt1, txt2, txt3, txt4, txt6, txt7);
+                    $head.append(txt5);
+                    $("#myModal").modal();
+                     $(" .smallimage").click(function () {
+                            if ($(this).attr("id") == "sm1") {
+                                $bigimg.attr("src", "img/c3.jpg");
+                            } else if ($(this).attr("id") == "sm2") {
+                                $bigimg.attr("src", "img/bg42.jpg");
+                            } else if ($(this).attr("id") == "sm3") {
+                                $bigimg.attr("src", "img/bg43.jpg");
+                            }
+                    });
+                } else if ($(this).attr("id") == "image5") {
+                    $tx.empty();
+                    $head.empty();
+                    var txt1 = $("<p></p>").text("因為買了電繪版後就想試用看看");
+                    var txt2 = $("<p></p>").text("看到很多人都會繪製貼圖");
+                    var txt3 = $("<p></p>").text("所以就想自己設計看看");
+                    var txt4 = $("<p></p>").text("過程雖然滿累的");
+                    var txt6 = $("<p></p>").text("不過看到貼圖真的上架後");
+                    var txt7 = $("<p></p>").text("真的滿有成就感的!");
+                    var txt5 = $("<p></p>").text("貼圖初次體驗");
+                     $img.css("height", "250px");
+                    $img.attr("src", "img/c4.png");
+                      $sm1.attr("src", "img/c4.png");
+                    $sm2.attr("src", "img/bg52.png");
+                     $sm3.attr("src", "img/bg53.png");
+                    $tx.append(txt1, txt2, txt3, txt4, txt6, txt7);
+                    $head.append(txt5);
+                    $("#myModal").modal();
+                         $(" .smallimage").click(function () {
+                            if ($(this).attr("id") == "sm1") {
+                                $bigimg.attr("src", "img/c4.png");
+                            } else if ($(this).attr("id") == "sm2") {
+                                $bigimg.attr("src", "img/bg52.png");
+                            } else if ($(this).attr("id") == "sm3") {
+                                $bigimg.attr("src", "img/bg53.png");
+                            }
+                    });
+                } else if ($(this).attr("id") == "image6") {
+                    $tx.empty();
+                    $head.empty();
+                    var txt1 = $("<p></p>").text("這是一款有趣的小工具APP");
+                    var txt2 = $("<p></p>").text("在許多歡樂場合中");
+                    var txt3 = $("<p></p>").text("總是需要一些助興的小道具~");
+                    var txt4 = $("<p></p>").text("因此我們朝這個想法去開發");
+                    var txt6 = $("<p></p>").text("它可以錄製音效和顯示圖片");
+                    var txt7 = $("<p></p>").text("螢幕色彩變換更能在黑暗增添氣氛!");
+                    var txt5 = $("<p></p>").text("實習成果");
+                      $img.css("height", "450px");
+                    $img.attr("src", "img/c5.png");
+                      $sm1.attr("src", "img/c5.png");
+                    $sm2.attr("src", "img/bg62.png");
+                     $sm3.attr("src", "img/bg63.png");
+                    $tx.append(txt1, txt2, txt3, txt4, txt6, txt7);
+                    $head.append(txt5);
+                    $("#myModal").modal();
+                       $(" .smallimage").click(function () {
+                            if ($(this).attr("id") == "sm1") {
+                                $bigimg.attr("src", "img/c5.png");
+                            } else if ($(this).attr("id") == "sm2") {
+                                $bigimg.attr("src", "img/bg62.png");
+                            } else if ($(this).attr("id") == "sm3") {
+                                $bigimg.attr("src", "img/bg63.png");
+                            }
+                    });
+                }
+
+
+
+            });
+
+        });
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container-fluid {
+            background-color: white;
+        }
+        
+        #home {
+            font-size: 25px;
+            color: #bcbcbc;
+        }
+        
+        body {
+            font-family: Microsoft JhengHei;
+            background-image: url(img/winter.jpg);
+            background-size: cover;
+        }
+        
+        #navheader li a {
+            color: #bcbcbc;
+        }
+        
+        #navheader li a:hover {
+            color: #888888;
+        }
+        
+        #navheader li:hover {
+            border-bottom: 2px solid #888888;
+        }
+        
+        .sm:hover img {
+            cursor: pointer;
+        }
+        
+        #myModal .modal-body {
+            height: 40%;
+        }
+        
+        .modal-header {
+            font-size: 25px;
+            font-family: arial;
+            color: #ffffff;
+            background: #696969;
+            /* For browsers that do not support gradients */
+            background: linear-gradient(to top, #5e676f, #b5b5b5);
+            /* Standard syntax */
+            background: -webkit-linear-gradient(to top, #5e676f, #b5b5b5);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(to top, #5e676f, #b5b5b5);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(to top, #5e676f, #b5b5b5);
+            /* For Firefox 3.6 to 15 */
+            text-align: center;
+        }
+        
+        .sm {
+            padding: 10px;
+        }
+        
+        .bigimage img {
+            width: 350px;
+            height: 200px;
+            float: left;
+            margin-left: 20px;
+            border: 1px solid #d9d9d9;
+            padding: 1%;
+        }
+        
+        .modal-footer {
+            clear: both;
+        }
+        
+        .text p {
+            margin-top: 15px;
+            text-indent: 10px;
+            color: #434343;
+        }
+        
+        .sm img {
+            width: 300px;
+            height: 200px;
+        }
+        
+        .content {
+            margin: 30px;
+        }
+        
+        .row {
+            margin-top: 2%;
+        }
+        
+        .cover {
+            background-color: black;
+            width: 300px;
+            height: 200px;
+            z-index: 4;
+            position: absolute;
+            top: -1.5px;
+            display: none;
+            opacity: 0.4;
+        }
+        
+        .smallimage img {
+            height: 80px;
+            width: 100px;
+        }
+        
+        .modal-body {
+            background-color: rgb(224, 224, 224);
+        }
+        
+        .modal-footer {
+            background: #696969;
+            /* For browsers that do not support gradients */
+            background: linear-gradient(to bottom, #5e676f, #b5b5b5);
+            /* Standard syntax */
+            background: -webkit-linear-gradient(to bottom, #5e676f, #b5b5b5);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(to bottom, #5e676f, #b5b5b5);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(to bottom, #5e676f, #b5b5b5);
+            /* For Firefox 3.6 to 15 */
+        }
+        
+        .smallimage {
+            margin-left: 3%;
+            border: 1px solid #c1c1c1;
+            float: left;
+        }
+        
+        .smallimage:hover {
+            cursor: pointer;
+        }
+        
+        .figure {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        #close {
+            background: #c3c3c3;
+            background: linear-gradient(to bottom, #eaeaea, #9a9a9a);
+            /* Standard syntax */
+            background: -webkit-linear-gradient(to bottom, #eaeaea, #9a9a9a);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(to bottom, #eaeaea, #9a9a9a);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(to bottom, #eaeaea, #9a9a9a);
+            /* For Firefox 3.6 to 15 */
+            border: 1px solid #626262;
+            font-family: arial;
+        }
+        
+        .figure img {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        
+        .figure:hover img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+          @media screen and (max-width: 500px) {
+           
+            .content{
+                margin-left: -10%;
+            }
+        }
+        
+        
+        @media screen and (max-width: 767px) {
+            #carousel {
+                height: 300px;
+            }
+            #navheader li:hover {
+                background-color: #f1f8ff;
+                border: none;
+            }
+            .bigimage img {
+                width: 80%;
+                height:300px;
+                margin-left: 20px;
+                border: 1px solid #d9d9d9;
+                padding: 1%;
+            }
+            .text {
+                float: left;
+                margin-left: 20%;
+            }
+            .sm{
+                margin-left:20%;
+            }
+        }
+        
+        @media screen and (min-width: 768px)and (max-width: 979px) {
+            #carousel {
+                height: 100%;
+            }
+            #navheader li:hover {
+                background-color: #f1f8ff;
+                border: none;
+            }
+        }
+    </style>
+</head>
+
+<body ondragstart="return false" onselectstart="return false" onContextMenu="return false">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="home" href="index.html">JessicaSKY <span class="glyphicon glyphicon-grain" aria-hidden="true"></span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="navheader">
+                    <li><a href="about.html">關於我 About me<span class="sr-only">(current)</span></a></li>
+                    <li><a href="experience.html">經歷 Experience</a></li>
+                    <li><a href="work.html">作品 Works</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+
+        <div class="col-lg-4 col-sm-6 sm" id="image1">
+            <div class="figure">
+                <img src="img/web.jpg">
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-sm-6 sm" id="image2">
+            <div class="figure">
+                <img src="img/c2.jpg">
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-sm-6 sm" id="image3">
+            <div class="figure">
+                <img src="img/cover3.png">
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4 col-sm-6 sm" id="image4">
+            <div class="figure">
+                <img src="img/c3.jpg">
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4 col-sm-6 sm" id="image5">
+            <div class="figure">
+                <img src="img/c4.png">
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-sm-6 sm" id="image6">
+            <div class="figure">
+                <img src="img/c5.png">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="bigimage .col-xs-12"><img>
+                        </div>
+
+                        <div class="text .col-xs-12">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="smallimage" id="sm1"><img>
+                        </div>
+                        <div class="smallimage" id="sm2"><img>
+                        </div>
+                        <div class="smallimage" id="sm3"><img>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
