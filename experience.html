@@ -113,7 +113,7 @@
         }
         
         .text>p {
-            margin-top: 10%;
+            margin-top: 30px;
             margin-left: 10%;
             font-size: 16px;
             color: rgba(9, 0, 46, 0.86);
@@ -166,6 +166,24 @@
         }
         
         @media screen and (min-width: 768px)and (max-width: 979px) {
+            .image {
+                float: left;
+                left: -50%;
+                height: 500px;
+            }
+            #navheader li:hover {
+                background-color: #f1f8ff;
+                border: none;
+            }
+              .item img {
+                margin-left: 0%;
+                width: 100%;
+            }
+                .text {
+                width: 100%;
+            }
+        }
+           @media screen and (min-width: 980px)and (max-width: 1200px) {
             .image {
                 float: left;
                 left: -50%;
@@ -312,11 +330,11 @@
                 </div>
             </div>
             <a class="leftarrow left carousel-control" href="#section" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left hidden-xs hidden-sm " id="leftarrow" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-chevron-left hidden-xs hidden-sm hidden-md " id="leftarrow" aria-hidden="true"></span>
 
             </a>
             <a class="rightarrow right carousel-control" href="#section" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right  hidden-xs hidden-sm " id="rightarrow" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-chevron-right  hidden-xs hidden-sm hidden-md " id="rightarrow" aria-hidden="true"></span>
             </a>
 
         </div>
