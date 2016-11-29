@@ -16,7 +16,7 @@
 
 
 
-            $(".sm").click(function () {
+            $(".figure").click(function () {
                 var $img = $("#myModal .modal-body .bigimage >img");
                 var $tx = $("#myModal .modal-body  .text");
                 var $head = $("#myModal .modal-header");
@@ -230,7 +230,7 @@
             border-bottom: 2px solid #888888;
         }
         
-        .sm:hover img {
+        .figure{
             cursor: pointer;
         }
         
@@ -278,30 +278,20 @@
             color: #434343;
         }
         
-        .sm img {
+        .figure img {
             width: 300px;
             height: 200px;
         }
         
         .content {
-            margin: 30px;
+            margin-left: 100px;
         }
         
         .row {
             margin-top: 2%;
         }
         
-        .cover {
-            background-color: black;
-            width: 300px;
-            height: 200px;
-            z-index: 4;
-            position: absolute;
-            top: -1.5px;
-            display: none;
-            opacity: 0.4;
-        }
-        
+     
         .smallimage img {
             height: 80px;
             width: 100px;
@@ -377,9 +367,7 @@
         
         
         @media screen and (max-width: 767px) {
-            #carousel {
-                height: 300px;
-            }
+          
             #navheader li:hover {
                 background-color: #f1f8ff;
                 border: none;
@@ -395,19 +383,30 @@
                 float: left;
                 margin-left: 20%;
             }
-            .sm{
-                margin-left:20%;
+           .content{
+                margin-left: 25%;
             }
         }
         
         @media screen and (min-width: 768px)and (max-width: 979px) {
-            #carousel {
-                height: 100%;
-            }
+           
             #navheader li:hover {
                 background-color: #f1f8ff;
                 border: none;
             }
+             .content{
+                  margin-left: 30%;
+              }
+        }
+          @media screen and (min-width: 980px)and (max-width: 1200px) {
+           
+            #navheader li:hover {
+                background-color: #f1f8ff;
+                border: none;
+            }
+              .content{
+                  margin-left: 10%;
+              }
         }
     </style>
 </head>
@@ -441,42 +440,42 @@
     </nav>
     <div class="content">
 
-        <div class="col-lg-4 col-sm-6 sm" id="image1">
-            <div class="figure">
+        <div class="col-xs-12 col-sm-12  col-md-6  col-lg-4  sm" >
+            <div class="figure" id="image1">
                 <img src="img/web.jpg">
             </div>
 
         </div>
-        <div class="col-lg-4 col-sm-6 sm" id="image2">
-            <div class="figure">
+        <div class="col-xs-12 col-sm-12  col-md-6  col-lg-4 sm" >
+            <div class="figure" id="image2">
                 <img src="img/c2.jpg">
             </div>
 
         </div>
-        <div class="col-lg-4 col-sm-6 sm" id="image3">
-            <div class="figure">
+        <div class="col-xs-12 col-sm-12  col-md-6  col-lg-4 sm">
+            <div class="figure" id="image3">
                 <img src="img/cover3.png">
             </div>
 
         </div>
 
 
-        <div class="col-lg-4 col-sm-6 sm" id="image4">
-            <div class="figure">
+        <div class="col-xs-12 col-sm-12  col-md-6  col-lg-4 sm" >
+            <div class="figure" id="image4">
                 <img src="img/c3.jpg">
             </div>
 
         </div>
 
 
-        <div class="col-lg-4 col-sm-6 sm" id="image5">
-            <div class="figure">
+        <div class="col-xs-12 col-sm-12  col-md-6  col-lg-4 sm" >
+            <div class="figure" id="image5">
                 <img src="img/c4.png">
             </div>
 
         </div>
-        <div class="col-lg-4 col-sm-6 sm" id="image6">
-            <div class="figure">
+        <div class="col-xs-12 col-sm-12  col-md-6  col-lg-4 sm" >
+            <div class="figure" id="image6">
                 <img src="img/c5.png">
             </div>
 
@@ -486,7 +485,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade hidden-xs hidden-sm hidden-md hidden-lg" id="myModal" role="dialog">
+    <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->

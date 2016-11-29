@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/swipe.js"></script>
+    
     <script>
         $(document).ready(function () {
 
@@ -18,15 +18,7 @@
 
                 });
     </script>
-    <script>
-        $(function () {
-            var $myCarousel = $(".carousel-inner").swiperight(function () {
-                $myCarousel.carousel('prev');
-            }).swipeleft(function () {
-                $myCarousel.carousel('next');
-            });
-        });
-    </script>
+   
 
 
     <style>
@@ -146,6 +138,7 @@
             .item img {
                 margin-left: 0%;
                 width: 100%;
+                   height:430px;
             }
             #navheader li:hover {
                 background-color: #f1f8ff;
@@ -153,24 +146,18 @@
             }
             .text {
                 width: 100%;
+                     height: 500px;
             }
-            #section a {
-                margin-top: -100%;
-            }
-            ol {
-                background: none;
-            }
-            .carousel-indicators li {
-                border: 1px solid #a793ff;
-            }
+               #section a {
+           position: fixed;
+                   top:20%;
+        }
+         
+         
         }
         
         @media screen and (min-width: 768px)and (max-width: 979px) {
-            .image {
-                float: left;
-                left: -50%;
-                height: 500px;
-            }
+          
             #navheader li:hover {
                 background-color: #f1f8ff;
                 border: none;
@@ -178,17 +165,20 @@
               .item img {
                 margin-left: 0%;
                 width: 100%;
+                     height:430px;
             }
                 .text {
                 width: 100%;
+                         height: 500px;
             }
+               #section a {
+           position: fixed;
+                   top:20%;
+        }
+         
         }
            @media screen and (min-width: 980px)and (max-width: 1200px) {
-            .image {
-                float: left;
-                left: -50%;
-                height: 500px;
-            }
+           
             #navheader li:hover {
                 background-color: #f1f8ff;
                 border: none;
@@ -196,10 +186,17 @@
               .item img {
                 margin-left: 0%;
                 width: 100%;
+                  height:430px;
             }
                 .text {
                 width: 100%;
+                    height: 500px;
             }
+                  #section a {
+           position: fixed;
+                   top:20%;
+        }
+         
         }
          
     </style>
@@ -259,7 +256,7 @@
 
             </div>
             <div class="item">
-                <img src="img/1.jpg" style="height:430px">
+                <img src="img/1.jpg" >
                 <div class="text ">
                     <p>大二時，因為興趣而選擇雙主修資管系</p>
                     <p>也因此開始寫程式的道路</p>
@@ -273,7 +270,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/board.jpg" style="height:430px">
+                <img src="img/board.jpg" >
                 <div class="text">
                     <p>大三時，因為以前待過的安親班需要人手幫忙</p>
                     <p>我因時間允許下便去幫忙</p>
@@ -292,7 +289,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/in.jpg" style="height:430px">
+                <img src="img/in.jpg">
                 <div class="text">
                     <p>大四下時，因為爭取到課堂實習機會</p>
                     <p>所以便組成一個team去一家科技公司實習</p>
@@ -313,7 +310,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/mark.jpg" style="height:430px">
+                <img src="img/mark.jpg" >
                 <div class="text">
                     <p>畢業後，我想先試驗自己的能力到底有多少</p>
                     <p>於是我找到一份關於視覺設計的打工</p>
@@ -330,11 +327,11 @@
                 </div>
             </div>
             <a class="leftarrow left carousel-control" href="#section" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left hidden-xs hidden-sm hidden-md " id="leftarrow" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-chevron-left" id="leftarrow" aria-hidden="true"></span>
 
             </a>
             <a class="rightarrow right carousel-control" href="#section" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right  hidden-xs hidden-sm hidden-md " id="rightarrow" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-chevron-right " id="rightarrow" aria-hidden="true"></span>
             </a>
 
         </div>
