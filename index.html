@@ -45,6 +45,7 @@
             font-family: Microsoft JhengHei;
             background-image: url(img/winter2.png);
             background-size: cover;
+            padding-top: 70px; 
         }
         
         .carousel-inner {
@@ -89,13 +90,14 @@
             text-decoration: none;
         }
         .thumbnail a img{
-            height:250px;
-            width: 500px;
+            height:100%;
+            width: 100%;
         }
         
         p {
             color: #0d4d5f;
-            margin-left: 30%;
+          
+                text-align: center;
         }
           #carousel img {
                 height: 500px;
@@ -125,7 +127,12 @@
             #carousel a {
                 height: 50%;
                 width: 4%;
-            }
+            } 
+            p {
+            color: #0d4d5f;
+          
+                text-align: center;
+        }
         }
         
         @media screen and (min-width: 768px)and (max-width: 979px) {
@@ -138,13 +145,18 @@
                 height: 40%;
                 width: 4%;
             }
+            p {
+            color: #0d4d5f;
+        
+                text-align: center;
+        }
         }
     </style>
 </head>
 
 <body ondragstart="return false" onselectstart="return false" onContextMenu="return false">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top ">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -204,7 +216,7 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-6 col-md-4" style="cursor:pointer">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 " style="cursor:pointer">
             <div class="thumbnail">
                 <a href="about.html">
 
@@ -217,7 +229,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4" style="cursor:pointer">
+        <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4" style="cursor:pointer">
             <div class="thumbnail">
                 <a href="experience.html">
                     <img src="img/ex1.jpg"  alt="...">
@@ -229,7 +241,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4" style="cursor:pointer">
+        <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4" style="cursor:pointer">
             <div class="thumbnail">
                 <a href="work.html">
                     <img src="img/cover3.png"  alt="...">
