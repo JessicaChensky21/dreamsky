@@ -18,9 +18,6 @@
 
                 });
     </script>
-   
-
-
     <style>
         * {
             box-sizing: border-box;
@@ -57,43 +54,27 @@
         ::-webkit-resizer {
             display: none;
         }
-
-        .container-fluid {
-            background-color: white;
-            position: fixed;
-            width: 100%;
-            left: 0%;
-            top: 0%;
-            z-index: 5;
-            border-bottom: 1px solid rgba(201, 201, 201, 0.78);
-        }
-        
+ .container-fluid {
+            background-color: #ffffff;
+        }        
         #home {
             font-size: 25px;
-            color: #bcbcbc;
-        }
-        
+            color: #97c9f4;
+        }        
         body {
             font-family: Microsoft JhengHei;
+            margin-top: 50px;
             overflow-x: hidden;
             background-image: url(img/winter.jpg);
-            overflow-y: auto;
+                overflow-y: auto;
             background-size: cover;
-          
-        }
-        
+        } 
         #navheader li a {
-            color: #bcbcbc;
-        }
-        
-        #navheader li a:hover {
-            color: #888888;
-        }
-        
+            color: #97c9f4;
+        }    
         #navheader li:hover {
-            border-bottom: 2px solid #888888;
-        }
-        
+           background-color: #cfe9ff;
+        }        
         .text {
             float: left;
             margin-top: 3%;
@@ -215,7 +196,7 @@
 </head>
 
 <body id="page" ondragstart="return false" onselectstart="return false" onContextMenu="return false">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default  navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
