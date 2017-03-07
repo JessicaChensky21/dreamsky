@@ -8,8 +8,34 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+   
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+              $('#p-tab').click(function() {
+        $('.content').css("display","none");
+          $('#ps').css("display","block");
+          
+});
+                $('#w-tab').click(function() {
+        $('.content').css("display","none");
+          $('#web').css("display","block");
+          
+});
+                $('#i-tab').click(function() {
+        $('.content').css("display","none");
+          $('#ai').css("display","block");
+          
+});
+                $('#o-tab').click(function() {
+        $('.content').css("display","none");
+          $('#other').css("display","block");
+          
+});
+           
+});
+       
+    </script>
     <style>
         .container-fluid {
             background-color: #ffffff;
@@ -22,10 +48,10 @@
         
         body {
             font-family: Microsoft JhengHei;
-            background-color: #c3d2db;
+          background-color: #adadff;
             margin-top: 50px;
         }
-        
+      
         #navheader li a {
             color: #97c9f4;
         }
@@ -45,7 +71,6 @@
         
         .sm {
             padding: 10px;
-            border: 1px solid rgba(128, 128, 128, 0.39);
             margin: 10px;
         }
         
@@ -54,17 +79,13 @@
             height: 100%;
         }
         
-        .content {
-            width: 90%;
-            margin: 0 auto;
-        }
-        
+   
         .row {
             margin-top: 2%;
         }
         .figure {
-            width: 500px;
-            height: 300px;
+            width: 300px;
+            height: 230px;
             overflow: hidden;
             float: left;
         }
@@ -83,7 +104,35 @@
             /* Safari 6.0 - 9.0 */
             filter: grayscale(100%);
         }
-        
+        .content-tab a {
+            font-size: 17px;
+            margin: 10px;
+            color: #ffffff;
+          
+        }
+        .content-tab a:nth-child(-n+3){
+            padding-right: 20px;
+            border-right: 1px solid #ffffff;
+            
+        }
+        .content-tab a:hover {
+            text-decoration: none;
+            color: #4a4747;
+        }
+    
+        .content-tab{
+            width: 500px;
+            height: 50px;
+            margin: 100px  auto 0px auto;
+        }
+        .content{
+            height: 400px;
+        }
+        .modal-body{
+            height: 150px;
+          
+        }
+       
         @media screen and (max-width: 500px) {
             .sm{
                 border:none;
@@ -143,64 +192,105 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div class="content">
-        <div class="col-xs-12   col-lg-12  sm">
-            <div class="figure" id="image1">
+    <div class="content-tab">
+        <a href="#" id="w-tab">網頁</a>
+         <a href="#" id="p-tab" >PS作品</a>
+        
+         <a href="#" id="i-tab">Illustrator作品</a>
+         <a href="#" id="o-tab">其他</a>
+    </div>
+    <div id="web" class="content">
+         <div class="col-xs-12   col-lg-3  sm">
+            <div class="figure" >
                 <img src="img/web.jpg">
             </div>
-            <div class="text">名稱:我的個人網站
-                <br>使用的軟體技術:HTML/CSS/Bootstrap
-                <br>目的:因為興趣而上了有關HTML/CSS的相關課程，因此想試試自己能力有多少，便嘗試自己架設這一個網站!
-            </div>
-
         </div>
-        <div class="col-xs-12  col-lg-12 sm">
-            <div class="figure" id="image2">
+         <div class="col-xs-12   col-lg-3  sm">
+            <div class="figure" >
+                <img src="img/s.jpg">
+            </div>
+        </div>
+       
+        </div>
+      <div id="ps" class="content" style="display:none">
+        <div class="col-xs-12  col-lg-3 sm">
+            <div class="figure" >
                 <img src="img/c2.jpg">
             </div>
-            <div class="text">名稱:海報設計
-                <br>使用的軟體技術:Adobe Photoshop
-                <br>目的:大學時，選修過一堂數位內容設計，在課堂上學過Adobe Illustrator和Photoshop，除了學操作軟體方法，也學了一些設計思維!
+          </div>
+           <div class="col-xs-12  col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/c1.jpg">
             </div>
-
-
-        </div>
-        <div class="col-xs-12 col-lg-12 sm">
-            <div class="figure" id="image3">
+          </div>
+            <div class="col-xs-12  col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/bg2.jpg">
+            </div>
+          </div>
+    </div>
+      <div id="ai" class="content" style="display:none">
+        <div class="col-xs-12 col-lg-3 sm">
+            <div class="figure" >
                 <img src="img/cover3.png">
             </div>
-            <div class="text">名稱:狗狗勇闖夢幻島
-                <br>使用的軟體技術:哈瑪星電子書軟體
-                <br>目的:這是一個team work，我們使用Illustrator搭配電子書軟體，設計了一款附教育性質的小遊戲，而我主要負責其中一個章節和角色設計!
-            </div>
+           
         </div>
-        <div class="col-xs-12 col-lg-12 sm">
-            <div class="figure" id="image4">
-                <img src="img/c3.jpg">
+           <div class="col-xs-12 col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/bg33.jpg">
             </div>
-            <div class="text">名稱:拯救!破碎的時空
-                <br>使用的軟體技術:Unity
-                <br>目的:這也是一個team work，我們利用Unity現有素材，製作了一款闖關小遊戲，雖然完成度不高，但是我們也從中學習到很多，而我負責設計其中一個關卡。
-            </div>
+           
         </div>
-        <div class="col-xs-12  col-lg-12 sm">
-            <div class="figure" id="image5">
-                <img src="img/c4.png">
+           <div class="col-xs-12 col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/map.png">
             </div>
-            <div class="text">名稱:Line貼圖
-                <br>使用的軟體技術:painter
-                <br>目的:因為看到許多人畫貼圖上架，再加上我自己對繪圖非常有興趣，因此我也嘗試著自己畫一組貼圖!
-            </div>
+           
         </div>
-        <div class="col-xs-12   col-lg-12 sm">
-            <div class="figure" id="image6">
-                <img src="img/c5.png">
+             <div class="col-xs-12 col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/dog.png">
             </div>
-            <div class="text">名稱:嗨!FUN
-                <br>使用的軟體技術:Android
-                <br>目的:因為一堂選修課而有的實習機會，主要是我們組成一個team，然後和實習公司一起設計一款APP，最終我們設計出一款派對的助興小工具，而我主要負責美術和溝通部分。
-            </div>
+           
         </div>
     </div>
+      <div id="other" class="content " style="display:none">
+        <div class="col-xs-12 col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/c3.jpg">
+            </div>
+        </div>
+        <div class="col-xs-12  col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/c4.png">
+            </div>
+          
+        </div>
+        <div class="col-xs-12   col-lg-3 sm">
+            <div class="figure" >
+                <img src="img/c5.png">
+            </div>
+          
+        </div>
+           <div class="col-xs-12   col-lg-3 sm">
+            <div class="figure" id="image6">
+                <img src="img/bg42.jpg">
+            </div>
+          
+        </div>
+           <div class="col-xs-12   col-lg-3 sm">
+            <div class="figure" id="image6">
+                <img src="img/moji.jpg">
+            </div>
+          
+        </div>
+    </div>
+ 
+
+
+
+    
+   
 </body>
 </html>
