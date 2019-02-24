@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica_sky</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+          
+              $('.section.banner').mouseover(function() {       
+                $('.section.banner .opacity').css("display","block");            
+        
+        });
+             $('.section.banner').mouseout(function() {       
+                $('.section.banner .opacity').css("display","none");            
+        
+        });
+             $('.section.pic').mouseover(function() {       
+                $('.section.pic .opacity').css("display","block");            
+        
+        });
+             $('.section.pic').mouseout(function() {       
+                $('.section.pic .opacity').css("display","none");            
+        
+        });
+             $('.section.other').mouseover(function() {       
+                $('.section.other .opacity').css("display","block");            
+        
+        });
+             $('.section.other').mouseout(function() {       
+                $('.section.other .opacity').css("display","none");            
+        
+        });
+         });
+    </script>
+
+    <style>
+        .container-fluid {
+            background-color: #ffffff;
+        }        
+       
+        body {
+            font-family: Microsoft JhengHei;
+            margin-top: 50px;
+            background-image: url(img/bg2.jpg);
+         
+        } 
+        .navbar{
+            margin-top:-50px;
+            padding: 0px;
+        }
+         #navbarNav li a:hover{
+            color: #ffffff;
+        }
+          #navbarNav li a {
+            width: 150px;
+          height: 60px;
+              padding-top: 20px;
+                color:#F4A7B9;
+           
+        }
+        #navbarNav li{
+            width: 150px;
+            text-align: center;
+        } 
+         #navbarNav li:hover {
+            background-color: #F4A7B9;    
+        }
+        #home{
+            font-size: 20px;
+            color:#F4A7B9;    
+        }
+       .navbar-brand{
+           margin: 0px 30px;
+             width: 140px;
+            letter-spacing: 5px;
+        }
+      
+        .row {
+            clear: both;
+        }
+        
+       
+        #top{
+             width:1280px; 
+            margin:0px auto;    
+        }
+        .section{ 
+            width: 344px;
+            height: 250px;
+            margin: 20px 60px;
+            float: left;
+        
+           
+        }
+        .img{
+            position: absolute;
+            z-index: -1;
+        }
+         .opacity a{
+            
+             font-size: 50px;
+            padding: 70px 60px;
+             float: left;
+             color: #ffffff;
+        }
+        .opacity{   
+            text-align: center;
+            width: 344px;
+            height: 250px;
+            opacity: 0.8;
+             
+            float: left;
+            background-color: gray;
+            display: none;
+        
+            
+        }
+    
+   
+          
+    </style>
+</head>
+
+<body ondragstart="return false" onselectstart="return false" onContextMenu="return false">
+    <nav class="  navbar navbar-expand-lg" style="background-color: white">
+        <a class="navbar-brand" href="index.html" id="home">JessicaSky</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid  #F4A7B9">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="banner.html">網頁banner <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="picture.html">說明圖</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="other.html">其他類型作品</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="top"><img src="img/TOP.jpg"></div>
+    <div class="section banner">
+        <div class="img">
+            <img src="img/1.jpg">
+        </div>
+        <div class="opacity">
+            <a href="banner.html">網頁Banner</a>
+        </div>
+    </div>
+
+    <div class="section pic">
+        <div class="img">
+
+            <img src="img/2.jpg">
+        </div>
+        <div class="opacity">
+            <a href="picture.html">說 明 圖</a>
+        </div>
+    </div>
+    <div class="section other">
+        <div class="img">
+            <img src="img/3.jpg">
+        </div>
+        <div class="opacity">
+            <a href="other.html">其他類型作品</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
