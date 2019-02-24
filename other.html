@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica_sky</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+              $('#p-tab').click(function() {
+        $('.content').css("display","none");
+          $('#ps').css("display","block");
+          
+});
+                $('#w-tab').click(function() {
+        $('.content').css("display","none");
+          $('#web').css("display","block");
+          
+});
+                $('#i-tab').click(function() {
+        $('.content').css("display","none");
+          $('#ai').css("display","block");
+          
+});
+           
+});
+       
+    </script>
+    <style>
+        .container-fluid {
+            background-color: #ffffff;
+        }
+        
+        body {
+            font-family: Microsoft JhengHei;
+          background-image: url(img/winter-landscape-2571788_1920.jpg);
+            margin-top: 50px;
+            
+        }
+       .navbar{
+            margin-top:-50px;
+            padding: 0px;
+        }
+         #navbarNav li a:hover{
+            color: #ffffff;
+        }
+          #navbarNav li a {
+            width: 150px;
+          height: 60px;
+              padding-top: 20px;
+                color:#F4A7B9;
+           
+        }
+        #navbarNav li{
+            width: 150px;
+            text-align: center;
+        } 
+         #navbarNav li:hover {
+            background-color: #F4A7B9;    
+        }
+        #home{
+            font-size: 20px;
+            color:#F4A7B9;    
+        }
+       .navbar-brand{
+           margin: 0px 30px;
+             width: 140px;
+            letter-spacing: 5px;
+        }
+        .text {
+            line-height: 50px;
+            font-size: 15px;
+            color: #26226f;
+            float: left;
+            width: 500px;
+            padding: 40px;
+        }
+        
+        .sm {
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .figure img {
+            width: 100%;
+           
+        }
+        
+   
+        .row {
+            margin-top: 2%;
+        }
+        .figure {
+            width: 400px;
+            height: 500px;
+            float: left;
+            margin:40px;
+        }
+        #ai .figure{
+            height: 300px;
+        }
+        
+        .content-tab a {
+            font-size: 17px;
+            margin: 10px;
+            color: #F596AA;
+          
+        }
+        .content-tab a:nth-child(-n+3){
+            padding-right: 20px;
+            border-right: 1px solid #F596AA;
+            
+        }
+        .content-tab a:hover {
+            text-decoration: none;
+            color: #F8C3CD;
+        }
+    
+        .content-tab{
+            width: 500px;
+            height: 50px;
+            margin: 100px  auto 0px auto;
+        }
+
+     
+      
+       
+       
+        }
+    </style>
+</head>
+
+<body ondragstart="return false" onselectstart="return false" onContextMenu="return false">
+    <nav class="  navbar navbar-expand-lg" style="background-color: white">
+        <a class="navbar-brand" href="index.html" id="home">JessicaSky</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid  #F4A7B9">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="banner.html">網頁banner <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="picture.html">說明圖</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="other.html">其他類型作品</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="content-tab">
+        <a href="#" id="w-tab">網頁&APP</a>
+        <a href="#" id="p-tab">DM</a>
+        <a href="#" id="i-tab">其他</a>
+    </div>
+    <div id="web" class="content" >
+         <div class=".col-6 .col-md-4"  >
+            <div class="figure">
+                <img src="img/other/11.jpg">
+            </div>
+        </div>
+          <div class=".col-6 .col-md-4" >
+            <div class="figure">
+                <img src="img/other/12.jpg">
+            </div>
+        </div>
+          <div class=".col-6 .col-md-4">
+            <div class="figure">
+                <img src="img/other/15.jpg">
+            </div>
+        </div>
+         <div class=".col-6 .col-md-4">
+            <div class="figure" style="width: 200px;">
+                <img src="img/other/icon.png">
+            </div>
+        </div>
+        <div class=".col-6 .col-md-4">
+            <div class="figure" style="width:300px;height: 450px">
+                <img src="img/other/logging.png">
+            </div>
+        </div>
+
+    </div>
+    <div id="ps" class="content" style="display:none">
+        <div class=".col-6 .col-md-4">
+            <div class="figure">
+                <img src="img/other/DM.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="ai" class="content" style="display:none">
+        <div class=".col-6 .col-md-4">
+            <div class="figure">
+                <img src="img/other/cover3.png">
+            </div>
+
+        </div>
+        <div class=".col-6 .col-md-4">
+            <div class="figure">
+                <img src="img/other/bg33.jpg">
+            </div>
+
+        </div>
+        <div class=".col-6 .col-md-4">
+            <div class="figure">
+                <img src="img/other/dog.png">
+            </div>
+
+        </div>
+        <div class=".col-6 .col-md-4">
+            <div class="figure" id="image6">
+                <img src="img/other/ending.jpg">
+            </div>
+
+        </div>
+         <div class=".col-6 .col-md-4">
+            <div class="figure" id="image6">
+                <img src="img/other/map.png">
+            </div>
+
+        </div>
+         <div class=".col-6 .col-md-4">
+            <div class="figure" id="image6">
+                <img src="img/other/moji.jpg">
+            </div>
+
+        </div>
+         <div class=".col-6 .col-md-4">
+            <div class="figure">
+                <img src="img/other/13.jpg">
+            </div>
+
+        </div>
+         <div class=".col-6 .col-md-4">
+            <div class="figure">
+                <img src="img/other/c4.png">
+            </div>
+
+        </div>
+    </div>
+  
+
+
+
+
+</body>
+</html>
